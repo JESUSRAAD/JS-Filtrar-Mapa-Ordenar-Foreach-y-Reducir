@@ -68,8 +68,8 @@ averageMetersByCity.push({city,averageCity})
 const orderCitysNames= (array=dataCity) => {
 let array2= [...array]
     return  array2.sort((a, b) => {
-        const numA = parseInt(a.nombre.match(/\d+/)[0]);
-    const numB = parseInt(b.nombre.match(/\d+/)[0]);
+        const numA = parseInt(a.nombre.match(/\d+/));
+    const numB = parseInt(b.nombre.match(/\d+/));
     
     return numB - numA;
 });
