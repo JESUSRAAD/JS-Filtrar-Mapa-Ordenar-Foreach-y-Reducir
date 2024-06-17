@@ -23,12 +23,9 @@ const namesCity = () => {
 // 3. Obtener la suma total de las cantidades de fotos de todos los objetos.
 
 const addPictures = () => {
-  let arrayNumPictures = dataCity.map((property) => {
-    return property.cantidadDeFotos;
-  });
-  return arrayNumPictures.reduce((acc, cur) => acc + cur, 0);
+  return dataCity.reduce((acc, cur) => acc + cur.cantidadDeFotos, 0);
 };
-//   console.log(addPictures());
+  // console.log(addPictures());
 
 // 4. Obtener un nuevo array con los objetos que tienen más de 100 metros cuadrados.
 
